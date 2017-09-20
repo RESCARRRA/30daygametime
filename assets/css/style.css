@@ -1,0 +1,54 @@
+    .crystal-image {
+    	width: 200px;
+    	height: 200px;
+    }
+    .instruct #instructions {
+    	padding: 30px;
+    	border-radius: 5px;
+    	background-image: url('../images/hologram.jpg');
+    	font-size: 17pt;
+    }
+    #crystals {
+    	background-image: url();
+    }
+    #toggle {
+    	width: 100%;
+    	height: 100%;
+    	background: #ccc;
+    }
+    .targetno, .targetno h2 {
+    	font-family: 'roboto', helvetica;
+    	font-size: 25pt;
+    	font-weight: thin;
+    	color: black;
+    }
+    .targetno {
+    	border: 5px solid #A0fcff;
+    	background-image: url('../images/hologram.jpg');
+    }
+    #number-to-guess {
+    	color: #A700AA;
+    	font-family: 'roboto', bold;
+    	font-size: 25pt;
+    }
+    .title h1 {
+    	font-family: 'Megrim', cursive;
+    	font-size: 70pt;
+    	color: #E4FEFE;
+    }
+    .prism {
+    	height: 100%;
+    	width: 100%;
+    }
+    #current-score {
+    	border: 2px solid #F2E4FE;
+    	background-color: #f3f3f3;
+    }
+    #score {
+    	border: 2px solid #E4FEFE;
+    	background-color: #f3f3f3;
+    }
+    #current-score #score {
+    	font-weight: bold;
+    	font-family: roboto;
+    }

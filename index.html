@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crystal Collectors!</title>
+  <link href="assets/css/reset.css" rel="stylesheet">  <!-- 1. reset stylesheet (Meyer, E.)-->
+  <link href="assets/css/style.css" rel="stylesheet">   <!-- 2. style.css // personal custom stylesheet -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet"><!-- 3. Boostrap 4.0 *beta* stylesheet-->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"><!-- 3. Boostrap 3.3.7 stylesheet-->
+  <link href="https://fonts.googleapis.com/css?family=Megrim|Roboto:100,400,700" rel="stylesheet"><!-- 4. google fonts/themes-->
+</head>
+<body>
+  <!-- div holding >> Instructions / toggled-->
+  <div class='container'>
+    <div class="container well-lg text-center bg-dark text-white title">
+      <div class="row"><img alt="hologram diamond prism" class="col-md-3 prism" src="assets/images/prism.gif">
+      <h1 class="col-md-6">CRYSTALS COLLECTOR</h1><img alt="hologram diamond prism" class="col-md-3 prism" src="assets/images/prism.gif"></div>
+    </div><br>
+    <div class="container row instruct">
+      <div class="col-md-2">
+        <button class="btn btn-outline-info btn-block btn-lg" data-target="#instructions" data-toggle="collapse" type="button">How to Play</button>
+      </div>
+      <div class="collapse text-justify lead col-md-10" id="instructions">
+        <p>You will be given a target number and 4 crystals at the start of each game. By clicking on a crystal you add a specific amount of points to your score. The value of each crystal is hidden from you until you click on it. Each time the game starts, the values of each crystal will change.</p>
+        <p>You <strong>win</strong> the game by matching your total score to the target number.<br>
+        You <strong>lose</strong> the game if your total score goes about the target number.<br>
+        <br>
+        Click the <strong><u>How to Play</u></strong> button at anytime to show or hide these instructions.<br>
+        <br>
+        <strong>Click on a crystal to begin!</strong></p>
+      </div>
+    </div><br>
+    <div class="container text-center gameboard">
+      <div class="panel panel-default well-lg text-center text-dark targetno">
+        <h2>Number to Guess: <span id="number-to-guess"></span></h2>
+      </div><!-- div holding >> crystal images-->
+      <div id="crystals"><img class="crystal-image" data-crystalvalue="" id="one" src="assets/images/clear-crystal.jpg"> <img class="crystal-image" data-crystalvalue="" id="two" src="assets/images/clear-crystal.jpg"> <img class="crystal-image" data-crystalvalue="" id="three" src="assets/images/clear-crystal.jpg"> <img class="crystal-image" data-crystalvalue="" id="four" src="assets/images/clear-crystal.jpg"></div><br>
+      <div class=" panel text-center text-dark well-lg" id="current-score">
+        <p></p>
+        <h3>Current Score:</h3>
+        <p></p>
+      </div>
+      <div class="panel text-center text-dark well-lg" id="score">
+        <p></p>
+        <h3>Wins: 0</h3>
+        <p></p>
+        <p></p>
+        <h3>Losses: 0</h3>
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript & jQuery -->
+  <!-- ========================================= -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="assets/javascript/game.js" type="text/javascript">
+  </script>
+</body>
+</html>
