@@ -5,7 +5,7 @@ $(document).ready(function() {
   var losses = 0;
   var currentScore = 0;
   var counter = 0;
-  var targetNumber = Math.floor(Math.random() * (120 - 19) + 1);
+  var targetNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
   var numberOptions = [4, 5, 6, 7];
   // Present the targetNumber to the user at the top of the screen 
   $("#number-to-guess").text(targetNumber);
@@ -63,11 +63,11 @@ $(document).ready(function() {
   // =================================================================================
   function reset() {
     counter = 0;
-    targetNumber = Math.floor(Math.random() * (120 - 19) + 1);
+    targetNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
     $("#number-to-guess").text(targetNumber);
     numberOptions = Array.from({
       length: 4
-    }, () => Math.floor(Math.random() * (12) + 1))
+    }, () => Math.floor(Math.random() * (12- 1 +1) + 1))
     $("#one").attr("data-crystalvalue", numberOptions[0]);
     $("#two").attr("data-crystalvalue", numberOptions[1]);
     $("#three").attr("data-crystalvalue", numberOptions[2]);
